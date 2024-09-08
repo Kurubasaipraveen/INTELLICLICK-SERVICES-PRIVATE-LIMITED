@@ -1,0 +1,101 @@
+/* Weather Page General Styles */
+.weather-page {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.weather-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.weather-icon, .forecast-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.forecast-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-card {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+
+.forecast-card img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Responsive Styles */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .weather-card {
+    padding: 15px;
+    max-width: 300px;
+    margin: 15px auto;
+  }
+
+  .forecast-card {
+    width: 130px;
+    padding: 12px;
+  }
+
+  .weather-icon, .forecast-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+  .weather-page {
+    padding: 15px;
+    height: auto; /* Allow height to adjust dynamically on mobile */
+  }
+
+  .weather-card {
+    padding: 10px;
+    max-width: 90%; /* Take most of the screen width */
+    margin: 10px auto;
+  }
+
+  .forecast-cards {
+    display: block; /* Stack forecast cards vertically */
+  }
+
+  .forecast-card {
+    width: 90%; /* Make forecast cards take most of the width */
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  .weather-icon, .forecast-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .forecast-card img {
+    width: 50px;
+    height: 50px;
+  }
+}
